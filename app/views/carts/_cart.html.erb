@@ -3,10 +3,10 @@
         Your  Pragmatic Cart
     </h2>
 
-    <ul class="list-disc list-inside">
+    <ul class="list-none list-inside">
         <% cart.line_items.each do |item| %>
             <li>
-                <%= item.product.title %>
+                <%= item.quantity %> &times; <%= item.product.title %>
             </li>
         <% end %>
     </ul>
